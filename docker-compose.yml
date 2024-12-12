@@ -6,7 +6,7 @@ services:
     ports:
       - "8182:8182"
     healthcheck:
-      test: ["CMD", "bin/gremlin.sh", "-e", "scripts/remote-connect.groovy"]
+      test: ["CMD", "./bin/gremlin.sh", "-e", "scripts/remote-connect.groovy"]
       interval: 10s
       timeout: 10s
       retries: 5
